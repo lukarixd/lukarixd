@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcb8a7; /* Cambiar el color de fondo a rojo */
+    font-family: 'Pacifico', cursive;
+  }
+  .container {
+    background-color: #ffffff; /* Color del cuadrado blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del cuadrado */
+}
+
+.content {
+    text-align: center;
+}
+
+img {
+    max-width: 60%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinear horizontalmente */
+    margin-top: 20px; /* Espacio entre la imagen y los puntos */
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: bounce 0.8s infinite alternate;
+}
+
+.dot1 {
+    animation-delay: 0.1s;
+}
+
+.dot2 {
+    animation-delay: 0.2s;
+}
+
+.dot3 {
+    animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+    to {
+        transform: translateY(-10px);
+    }
+}
+#heart-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 500%;
+    z-index: -1;
+  }
+  
+  .heart {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('imagen/heart.png');
+    background-size: cover;
+    animation: fall 5s linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-100vh) rotate(0deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(100vh) rotate(720deg);
+      opacity: 1;
+    }
+  }
+  

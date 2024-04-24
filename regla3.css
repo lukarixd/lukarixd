@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcb8a7; /* Cambiar el color de fondo a rojo */
+    font-family: 'Pacifico', cursive;
+  }
+  .container {
+    background-color: #ffffff; /* Color del cuadrado blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del cuadrado */
+}
+
+.content {
+    text-align: center;
+}
+.container {
+    margin-top: 50px;
+}
+.input-container {
+    margin-bottom: 20px;
+}
+input {
+    width: calc(33.33% - 10px);
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #45a049;
+}
+img {
+    max-width: 20%;
+    height: auto;
+    margin-top: 1px;
+}
+
+  #heart-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 500%;
+    z-index: -1;
+  }
+  
+  .heart {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('imagen/heart.png');
+    background-size: cover;
+    animation: fall 5s linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-100vh) rotate(0deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(100vh) rotate(720deg);
+      opacity: 1;
+    }
+  }
+  
